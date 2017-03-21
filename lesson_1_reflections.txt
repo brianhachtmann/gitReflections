@@ -1,0 +1,177 @@
+git runs from command lines
+short lines are a good idea
+crosseyes will only get you so far
+saving stuff often and uploading rev can save hours of work
+command line interface can be fun!
+
+here are a few command line interfaces that I can recall:
+ls
+dir
+mkdir a # make a directory
+sudo # ask me for a password to run this command
+subl filename.txt # opens sublime file, can use to create file
+
+here's a few I didn't remember:
+pwd # print working directory
+cd ~ # change directory to home directory
+
+How did viewing a diff between two versions 
+of a file help you see the bug that was introducd?
+
+this is very familiar territory for me.
+
+version control options:
+   manual save
+   drop box
+   wikipedia view history
+   google docs
+   git
+   SVN
+
+how could having easy access to the entire history 
+of a file make you a more efficient programmer in the long term?
+
+saving hours finding bugs.
+having working versions of certain chunks of code and quickly running
+various versions copies to see which still work which break and from
+there understand how the code will work and break.
+you won't have to re-write code cause you won't lose it.
+
+properties of a version control system:
+features:
+
+syntax highlighting
+paranthesis matching
+manual saving
+offline use
+
+when to save:  user?
+
+Git:
+    any editor
+    use offline
+    manual save
+
+commits are basic building blocks of Git
+
+concept map
+version control
+
+how Git works and how to use history of file.
+
+message explains what has changed since last commit.
+
+git commands
+git diff # see difference between two commits.  copy paste git IDs
+git diff 
+
+when to commit:  one commit per logical change solution.
+
+pros and cons of manually chosing when to commit unlike google docs 
+which saves automatically:
+
+autosave
+   + at least versions are there at all if human in outer space
+   - might save nonsensical moments
+   - won't save sensical moments
+
+git
+   + gets the moments you need.  can actually make bug finding possible.
+   - can forget human error big problem.
+
+git calls files that are together a repository.
+when you commit a file in a repository, every file is committed.
+
+commit is snapshot of every file in a reposity when you choose 
+to make the commit.
+
+why git multiple files?
+the files are working together to do something.
+google docs doesn't link code between docs so doesn't save together.
+
+git --version #command for getting the version of git
+
+git clone copies an entire repository.
+
+git clone url and clone the repository.
+git log
+git diff
+
+how cna you use the commands git log 
+and git diff to view the history of files?
+
+git log will display the logs.  the ID can use to campare using 
+git diff ID1 ID2
+
+note bottom of file won't display unless you scroll down
+to get back to command line in both log and diff hit q
+
+git checkout resets all files to how they were at time of commit
+
+in finder command+shift+H to find home directory
+
+how might version control make you more confident to
+make changes that could break something?
+
+version control will make me more confident because I know I can
+commit a version that is working how I want, give it a good comment,
+and later when I have messed everything up I can revert to this.
+
+to edit the bash file
+
+touch .bash_profile
+open -e .bash_profile
+
+can't seem to add or remove .
+
+ls -a # lists all hidden files.
+
+
+cd / #gets you to root directory
+pwd # print working directory
+
+cd /usr/local/bin # this is where soft links and executables you installed separate from how the app store / other standard installation.
+
+ls -l subl # -l is longform
+
+git config # will provide a help menu for git
+git config --global --get core.editor # will check for core.editor parameter
+
+I want to use git for developing 
+
+git copy # is like git clone but it doesn't copy the commit comments.
+git diff # compares first file tols second file, second file additions are +
+
+git checkout branchname # this is only useful if you pointed a branch name with a commit
+git reflog # local checkout / commit histories.
+git branch # tells you names of branches.  branches names point to end of branch.
+
+# advanced from tobenkin:
+git rebase # (don't use just yet) can squash commits, also can propogate a commit.
+git bisect # can go look for bugs.  go in the past and find when behaviour started.
+    # this does the binary search for you, you type git bisect good, git bisect bad...
+
+
+cd .. # go to directory above
+
+git checkout file # is a way to get rid of modifications you have made and return a file to the current commit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
