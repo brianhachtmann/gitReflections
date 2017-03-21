@@ -1,0 +1,16 @@
+files and folders that start with a . are hidden from file explorers / your OS
+.git folder is where the git metadata is stored
+ls -a # list all files including hidden ones
+git init # initialized the working directory as a git controlled directory and adds .git folder
+
+what happens when you initialize a repository?  why do you need to do it?
+initializing a repository is how you get git to consider this a git controlled directory, and that is why you do it.
+
+git add # adds files to staging area
+git rm # removes a file from the staging area (also deletes the file)
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+staging area is not the working directory because it only contains files that you want the git commit command to operate on and put in the repo.  the staging area is not the repo because it doesn't contain any commits, simply holds the file(names) that you are going to commit.
+
+here is a great style guide for commits: http://udacity.github.io/git-styleguide/
