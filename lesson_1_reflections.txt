@@ -97,7 +97,7 @@ git clone url and clone the repository.
 git log
 git diff
 
-how cna you use the commands git log 
+how can you use the commands git log 
 and git diff to view the history of files?
 
 git log will display the logs.  the ID can use to campare using 
@@ -154,10 +154,7 @@ git bisect # can go look for bugs.  go in the past and find when behaviour start
 
 cd .. # go to directory above
 
-git checkout file # is a way to get rid of modifications you have made and return a file to the current commit
-
-
-
+git checkout file # is a way to get rid of modifications you have made to that file and return a file to the current commit
 
 
 
