@@ -14,3 +14,51 @@ How is the staging area different from the working directory and the repository?
 staging area is not the working directory because it only contains files that you want the git commit command to operate on and put in the repo.  the staging area is not the repo because it doesn't contain any commits, simply holds the file(names) that you are going to commit.
 
 here is a great style guide for commits: http://udacity.github.io/git-styleguide/
+
+
+git diff # with no arguments is how you compare working directory files to staging area files.
+
+git diff --staged # compares staged files to the last commit in the repo (master or head?)
+git reset --hard # removes any changes from head to both working directory and staging area
+# be careful with this one.  it's not reversible if you make a mistake and delete recent work.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+the staging area allows you to only commit the files you want to commit per that logical change.  if for example you have changed other files too while you were working, you can see using git diff and git diff --staged to verify you are committing what you want.
+
+git branch # with no arguments shows current branches
+git branch branchname # creates a branch named branchname
+git checkout branchname # changes you from your current branch to branchname
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+branches are for doing experimental work like trying new features or doing something you don't want included in the master branch like seeing what a language change would look like.  you can later merge.  this helps keep your code organized purposefully.  guy at udacity says "context switching" or moving on to new work.  this is especially useful for production software.  the master branch never breaks always works.  when you move on to a new piece of work like fixing a bug or working on a new feature.  A development branch can be where active work is taking place, you can have an experimental branch, unique feature branches
+
+git log --graph --oneline master branchname1 branchname2
+
+git checkout -b new_branch_name # executes the following two commands:
+    git branch new_branch_name
+    git checkout new_branch_name
+
+How do the diagrams help you visualize the branch structure?
+
+diagrams helped me see how I won't be able to access certain branches with git log.  I'm not sure how to find these branches.
+
+git merge master coins # merges coins into master
+
+git show commit_id # shows you difference between commit_id and commit ID's parent
+git branch -d coins # -d stands for delete, deletes coins
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+the result of merging two branches together is a combination that is done by git (impressively) that considers what lines should maintain to maintain the function of each of the branches.  if branch A deleted line A, then it remains out of merged file.  if branch A added line A, it remains in merged file, etc.
+the diagram makes sense, esp. when u use git log --graph --oneline
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+pros = fast, mostly works great.
+cons = might make mistakes
+manual = terribly slow likely more errors.
+
+
+
