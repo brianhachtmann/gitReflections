@@ -1,0 +1,19 @@
+who is salogel42?
+github projects of interest:
+  + ipython
+  + bootstrap - web development shell
+jquery - javascript library making easy to interact with html
+atom - a text editor designed for editing code
+
+git setup instructions:
+git credential-osxkeychain
+
+git remote # checks what remote repos are already linked
+git remote origin URL # creates remote names it origin and links to URL
+
+git push origin master # pushes master branch to origin remote repo
+
+When would you want to use a remote repository rather than keeping all your work local?
+  + when you are collaborating with others
+  + when you are publishing code that is ready for general public use
+  + when you want to be able to share your code with specific others
